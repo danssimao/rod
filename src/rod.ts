@@ -19,7 +19,7 @@ type Event = MouseEvent;
 
 type EventParams = [HTMLElement, string, (event: Event) => void];
 
-class Totie {
+class Rod {
     settings: TotieSettings;
     LabelElement: HTMLElement;
     InElement: HTMLElement;
@@ -51,7 +51,7 @@ class Totie {
     }
 
     static create({origin, target, container}, options) {
-        return new Totie({origin, target, container}, options);
+        return new Rod({origin, target, container}, options);
     }
 
     getBounds(source) {
@@ -237,4 +237,4 @@ class Totie {
     }
 }
 
-export default Totie;
+export default Rod;
