@@ -2,7 +2,7 @@ import { SOURCES } from "./consts.js";
 import { style, settings } from "./defaults.js";
 import { merge, getDistanceBetweenPoints, getAxis, getRadians, getDegrees } from "./utils.js";
 
-type TotieSettings = {
+type RodSettings = {
     originX: number;
     originY: number;
     targetX: number;
@@ -20,7 +20,7 @@ type Event = MouseEvent;
 type EventParams = [HTMLElement, string, (event: Event) => void];
 
 class Rod {
-    settings: TotieSettings;
+    settings: RodSettings;
     LabelElement: HTMLElement;
     InElement: HTMLElement;
     OutElement: HTMLElement;
